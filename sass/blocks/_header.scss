@@ -1,4 +1,43 @@
-@import '../variabls';
+@import "../variabls";
+
+.site-header {
+  padding: 20px 0;
+  background: rgba(23, 25, 29, 0.1);
+  backdrop-filter: blur(1px);
+}
+
+.header__inner {
+  @include flex-starter;
+  justify-content: space-between;
+}
+
+.menu__list {
+  display: flex;
+  list-style-type: none;
+}
+
+.menu__item + .menu__item {
+  padding-left: 25px;
+}
+
+.menu__link {
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: $text-color;
+}
+
+.contact__header {
+  @include flex-starter;
+}
+
+.contact__tel {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: $text-color;
+}
 
 .toggle {
   display: flex;
@@ -9,8 +48,8 @@
 
 .toggle label {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: -18px;
+  left: -50px;
   width: 50px;
   height: 30px;
   border-radius: 15px;
@@ -26,7 +65,7 @@
   width: 26px;
   height: 26px;
   border-radius: 50%;
-  background-color: #fff;
+  background-color: $dark-text-color;
   transition: transform 0.5s;
 }
 
@@ -48,4 +87,30 @@
   margin-left: 10px;
   font-size: 1.2em;
   font-weight: bold;
+}
+
+.contact {
+  margin-left: 40px;
+}
+
+.contact__email {
+  padding: 0;
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  color: $text-color;
+}
+
+.btn__order {
+  margin-left: 31px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  padding: 12px 21px 14px 22px;
+  color: $dark-text-color;
+  background: #6911ad;
+  border-radius: 7px;
+  border: none;
 }
