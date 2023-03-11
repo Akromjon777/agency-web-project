@@ -333,14 +333,14 @@ img {
 }
 
 html {
-  background-color: #ffffff;
-  color: #000000;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
   transition: background-color 0.5s, color 0.5s;
 }
 
 html.dark {
-  background-color: #1d2124;
-  color: #ffffff;
+  background-color: rgb(29, 33, 36);
+  color: rgb(255, 255, 255);
   transition: background-color 0.5s, color 0.5s;
 }
 
@@ -362,6 +362,48 @@ html.dark {
   padding: 0 20px;
 }
 
+.site-header {
+  padding: 20px 0;
+  background: rgba(23, 25, 29, 0.1);
+  -webkit-backdrop-filter: blur(1px);
+          backdrop-filter: blur(1px);
+}
+
+.header__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menu__list {
+  display: flex;
+  list-style-type: none;
+}
+
+.menu__item + .menu__item {
+  padding-left: 25px;
+}
+
+.menu__link {
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: rgb(0, 0, 0);
+}
+
+.contact__header {
+  display: flex;
+  align-items: center;
+}
+
+.contact__tel {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: rgb(0, 0, 0);
+}
+
 .toggle {
   display: flex;
   align-items: center;
@@ -371,12 +413,12 @@ html.dark {
 
 .toggle label {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: -18px;
+  left: -50px;
   width: 50px;
   height: 30px;
   border-radius: 15px;
-  background-color: #6c757d;
+  background-color: rgb(108, 117, 125);
   transition: background-color 0.5s;
 }
 
@@ -388,7 +430,7 @@ html.dark {
   width: 26px;
   height: 26px;
   border-radius: 50%;
-  background-color: #fff;
+  background-color: rgb(255, 255, 255);
   transition: transform 0.5s;
 }
 
@@ -399,7 +441,7 @@ html.dark {
 }
 
 .toggle input[type=checkbox]:checked + label {
-  background-color: #007bff;
+  background-color: rgb(0, 123, 255);
 }
 
 .toggle input[type=checkbox]:checked + label:before {
@@ -410,4 +452,30 @@ html.dark {
   margin-left: 10px;
   font-size: 1.2em;
   font-weight: bold;
+}
+
+.contact {
+  margin-left: 40px;
+}
+
+.contact__email {
+  padding: 0;
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  color: rgb(0, 0, 0);
+}
+
+.btn__order {
+  margin-left: 31px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  padding: 12px 21px 14px 22px;
+  color: rgb(255, 255, 255);
+  background: #6911ad;
+  border-radius: 7px;
+  border: none;
 }/*# sourceMappingURL=main.css.map */
